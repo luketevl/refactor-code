@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Exercicio</title>
+    <meta charset="UTF-8">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/internacoes.js"></script>
+    <script>
+        $(function(){
+          let sum = 0;
+          pac.forEach(el => {
+              sum += (el.convenio);
+              $("#resumo").append(`Numero: ${el.numero}<br>Nome: ${el.nome} <br>CID: ${el.cid}`);
+              el.complemento.forEach(comp=> {
+                $("#resumo").append(`<br>Endereço: ${comp.endereco} <br>Bairro: ${comp.bairro} <br>Cidade: ${comp.cidade}<br><br>`);
+              })
+            });
+            $("#total").append(sum);
+        });
+    </script>
+</head>
+
+<body>
+   <h1>Pacientes Internados:</h1>
+   <h3>Quantidade de pacientes com convênio: <span id="total"></span></h3>
+   <div id="resumo"></div>
+</body>
+</html>

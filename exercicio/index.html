@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>Exercicio</title>
+    <meta charset="UTF-8">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/internacoes.js"></script>
+    <script>
+        $(function(){
+            
+            for(i = 0; i < pac.length; i++){
+                if(pac[i].convenio == false){
+                    $("#resumo").append(
+                    "Numero: " + pac[i].numero +
+                    "<br>Nome: " + pac[i].nome +
+                    "<br>CID: " + pac[i].cid
+                );
+                    for(j = 0; j < pac[i].complemento.length; j++){
+                        $("#resumo").append(
+                            "<br>Endereço: " + pac[i].complemento[j].endereco +
+                            "<br>Bairro: " + pac[i].complemento[j].bairro +
+                            "<br>Cidade: " + pac[i].complemento[j].cidade + "<br><br>"
+                        );
+                    }
+                }else{
+                    if(pac[i].convenio == true){
+                        $("#resumo").append(
+                        "<strong>Numero: " + pac[i].numero +
+                        "<br>Nome: " + pac[i].nome +
+                        "<br>CID: " + pac[i].cid + "</strong>"
+                    );
+                        for(j = 0; j < pac[i].complemento.length; j++){
+                            $("#resumo").append(
+                                "<strong><br>Endereço: " + pac[i].complemento[j].endereco +
+                                "<br>Bairro: " + pac[i].complemento[j].bairro +
+                                "<br>Cidade: " + pac[i].complemento[j].cidade + "<br><br></strong>"
+                            );
+                        }
+                        var x = pac[i].convenio;
+                        var cont, total;
+
+                        for(cont = 0; cont <= x; cont++){
+                            total = x * cont;
+                        }
+                        $("#total").append(total + i)
+                    }
+                }
+            }
+
+        });
+    </script>
+</head>
+
+<body>
+   <h1>Pacientes Internados:</h1>
+   <h3>Quantidade de pacientes com convênio: <span id="total"></span></h3>
+   <div id="resumo"></div>
+</body>
+</html>
