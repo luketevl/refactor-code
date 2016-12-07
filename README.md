@@ -1,2 +1,4 @@
 # refactor-code
-Refactor codes
+Refactor and Refactor and Refactor
+
+Where **BIG** codes are transformed in **small** ;)
