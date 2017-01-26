@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #F2F2F2;
+  width: 100%;
+  position: relative;
+  font-family: "Lato", sans-serif;
+}
+.navigation {
+  background-image: url(../img/bg.png);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+.navigation li {
+  display: inline-block;
+}
+.navigation a {
+  display: inline-block;
+  color: #3C3C3C;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 17px;
+  font-family: "Lato", sans-serif;
+}
+.navigation a:hover {
+  color: #333333;
+}
+header {
+  background-image: url(../img/bg.png);
+  max-height: 100%;
+  max-width: 100%;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: "Lato", sans-serif;
+}
+header .header-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  left: 50%;
+}
+.about {
+  background-image: url(../img/bg.png);
+  max-height: 100%;
+  min-height: 521px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.about-container {
+  display: flex;
+  align-items: center;
+}
+.about-content{
+  display: flex;
+}
+.about-text {
+  width: 700px;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+}
+#about-image{
+  width: 250px;
+}
+#about-image img {
+  width: 100%;
+  height: auto;
+}
+.about-title {
+  margin-right: 5px;
+}
+.project {
+  max-height: 100%;
+  height: 700px;
+  max-width: 100%;
+  background-color: #393939;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.project-text {
+  width: 700px;
+  color: white;
+  padding-top: 190px;
+}
+.project img {
+  max-width: 250px;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  right: 20%;
+}
+.project-title {
+  color: white;
+}
+.project-button__download {
+  width: 500px;
+  height: 40px;
+  background-color: #2E2E2E;
+  border: none;
+  color: white;
+}
